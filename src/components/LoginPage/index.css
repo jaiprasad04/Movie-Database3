@@ -1,0 +1,121 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1380&t=st=1706848454~exp=1706849054~hmac=3b40c19c998c4b2fa6ea5ddcee4ae6ec6724a746571e6cbe0eb8ebb208efe983');
+  background-size: cover;
+  padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+  }
+}
+
+.login-image {
+  width: 250px;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .login-image {
+    width: 350px;
+  }
+}
+
+.login-title {
+  font-size: 24px;
+  font-family: 'Bree Serif';
+  color: #009dff;
+  align-self: center;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 360px;
+  height: 360px;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 24px;
+    padding: 36px;
+    order: 1;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.input-field-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4b4848;
+  border-radius: 4px;
+  padding: 4px 6px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  border: none;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.input-label {
+  color: #f8f9ff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.open-password-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-button {
+  color: #ffffff;
+  background-color: #009dff;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.error-msg {
+  align-self: flex-start;
+  color: #ff0b37;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}

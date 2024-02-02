@@ -1,0 +1,28 @@
+.upcoming-container {
+  /* background-color: #252121; */
+  background-image: url('https://img.freepik.com/free-vector/realistic-christmas-background_52683-49613.jpg?t=st=1706843793~exp=1706844393~hmac=8eb58365feaf1dacad524e5a16cd94acf3a662076298d149500a0e12f6650c51');
+  background-size: contain;
+  min-height: 100vh;
+  padding-top: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  .upcoming-container {
+    padding-top: 96px;
+  }
+}
+
+.upcoming-movie-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upcoming-movie-list {
+  padding-left: 0;
+  width: 90%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
